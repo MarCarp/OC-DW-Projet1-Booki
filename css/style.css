@@ -2,6 +2,8 @@
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -16,8 +18,6 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -194,8 +194,36 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activities ***********/
+#activities {
+    padding: 30px;
+}
 
+#activities .section-title {
+    margin-bottom: 30px;
+}
 
+#activities .activities-container {
+    display: flex;
+    gap: 30px;
+}
+
+#activities .activity-element {
+    flex: 1;
+    padding: 0;
+    overflow: hidden;
+}
+
+#activities .activity-visual {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#activities .activity-title {
+    padding: 20px;
+    font-size: 16px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
