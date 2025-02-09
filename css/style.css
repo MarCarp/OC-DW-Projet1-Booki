@@ -197,6 +197,7 @@ a {
 /****** Activities ***********/
 #activities {
     padding: 30px;
+    margin-bottom: 35px;
 }
 
 #activities .section-title {
@@ -223,6 +224,30 @@ a {
 #activities .activity-title {
     padding: 20px;
     font-size: 16px;
+}
+
+/****** Footer ***********/
+#main-footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+}
+
+#main-footer .footer-part {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+#main-footer .footer-line {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+#main-footer .footer-line:last-child {
+    margin-bottom: 0;
+}
+
+#main-footer .footer-part-title {
+    font-size: 18px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
