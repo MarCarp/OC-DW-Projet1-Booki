@@ -1,16 +1,16 @@
 /****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
     --filter-border-color: #D9D9D9;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .fa-solid {
@@ -347,11 +347,12 @@ section.block {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
+    .filter-container,
+    #hostings {
         flex-direction: column;
     }
 
-    .hebergements {
+    .hostings-container {
         width: 100%;
     }
 
@@ -377,9 +378,27 @@ section.block {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    #activities .activity-visual {
+        height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    #main-header,
+    #activities .activities-container,
+    .cards-container,
+    .populaires-cards,
+    #main-footer {
+        flex-direction: column;
+    }
+
+    .filters-btn-container {
+        flex-wrap: wrap;
+    }
+
+    .filters-btn-container .filter-btn {
+        flex-basis: 50%;
+    }
 }
