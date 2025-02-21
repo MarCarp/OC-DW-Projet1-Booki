@@ -4,6 +4,7 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
     --filter-border-color: #D9D9D9;
+    --section-gap: 35px;
 }
 
 * {
@@ -17,15 +18,11 @@
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
-}
-
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
+    margin: auto;
 }
 
 a {
@@ -66,7 +63,45 @@ section.block {
 }
 
 /****** Flex ***********/
+.flx {
+    display: flex;
+}
 
+.flx-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#search-filter .search-form {
+    display: inline-flex;
+}
+
+#search-filter .filter-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-filter .filters-btn-container {
+    display: flex;
+}
+
+#search-filter .filter-btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /****** Main Header ***********/
 #main-header {
@@ -78,9 +113,6 @@ section.block {
 
 #main-header .logo-container {
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #main-header #main-logo {
@@ -107,15 +139,11 @@ section.block {
 
 /****** Search And Filter ***********/
 #search-filter {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     gap: 35px;
 }
 
 /* Search Bar */
 #search-filter .search-form {
-    display: inline-flex;
     height: 50px;
     border-radius: 15px;
     overflow: hidden;
@@ -159,21 +187,12 @@ section.block {
 }
 
 /* Filters */
-#search-filter .filter-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
+#search-filter .filter-container,
 #search-filter .filters-btn-container {
-    display: flex;
     gap: 15px;
 }
 
-#search-filter .filter-btn {
-    display: inline-flex;
-    align-items: center;
-    
+#search-filter .filter-btn {    
     padding: 4px 20px;
     height: 50px;
     border: 2px solid var(--filter-border-color);
@@ -281,12 +300,6 @@ section.block {
     width: 32%;
 }
 
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
@@ -358,7 +371,6 @@ section.block {
 /****** Footer ***********/
 #main-footer {
     background-color: var(--main-bg-color);
-    display: flex;
 }
 
 #main-footer .footer-part {
